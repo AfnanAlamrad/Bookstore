@@ -1,0 +1,27 @@
+#custom-items {
+    background-color: #1a2124;
+    color: white;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 20px;
+}
+
+#cat {
+    font-family: 'Patrick Hand', cursive;
+}
+
+#msg {
+    color: white;
+    font-weight: bold;
+    font-family: 'Pacifico', cursive;
+    background-color: #1a21245d;
+    text-align: center;
+    font-size: 50px;
+    margin-top: -230px;
+}
+
+#footer {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+

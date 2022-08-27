@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>The Best Bookstore Ever!</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h5 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+  background-image: url('img/Background.jpg');
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+</style>
+
+<!--custom style sheet Afnan-->
+<link rel="stylesheet" href="style.css">
+
+<!--fonts-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet"> 
+</head>
+<body>
+
+<div class="bgimg w3-display-container">
+  <div class="w3-display-middle w3-jumbo">
+    <p id="msg">The Best Bookstore Ever!</p>
+  </div>
+  <div class="w3-display-topleft w3-container w3-xlarge">
+    <p ><button onclick="document.getElementById('Books').style.display='block'" class="w3-button" id="custom-items">Books</button></p>
+    <p><button onclick="document.getElementById('Order a Book').style.display='block'" class="w3-button" id="custom-items">Order a Book</button></p>
+  </div>
+  <div class="w3-display-bottommiddle w3-container">
+    <p id="footer">Mars Planet - Street 198443  </p>
+    <p id="footer">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  </div>
+</div>
+
+<!-- Menu Modal -->
+<div id="Books" class="w3-modal">
+    <div class="w3-modal-content w3-animate-zoom">
+      <div class="w3-container w3-display-container" id="custom-items">
+        <span onclick="document.getElementById('Books').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+        <h1 id="cat">Comics</h1>
+    </div>
+    <div class="w3-container">
+      <h5>Full House <b>$30</b></h5>
+      <h5>Sweet Home <b>$15.99</b></h5>
+      <h5>My Bucket List <b>$20.50</b></h5>
+    </div>
+    <div class="w3-container" id="custom-items">
+      <h1 id="cat">Biographical Books</h1>
+    </div>
+    <div class="w3-container">
+      <h5>Steve Jobs <b>$20.99</b></h5>
+      <h5>Daniel Kang <b>$33.09</b></h5>
+      <h5>Tamer Hosny <b>$44.00</b></h5>
+      <h5>Ahmed Abdellatif <b>$1000</b></h5>
+      <h5>Jennifer Ward <b>(20 Pieces of Donuts)</b></h5>
+    </div>
+  </div>
+</div>
+
+<!-- Contact Modal -->
+<div id="Order a Book" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container" id="custom-items">
+      <span onclick="document.getElementById('Order a Book').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+      <h1 id="cat">Order a Book</h1>
+    </div>
+    <div class="w3-container">
+      <p>To order a book, please fill the following form:</p>
+      <form action="/action_page.php" target="_blank">
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Book Name" required name="Book Name"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="Quantity" required name="Quantity"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+        <p><button class="w3-button" type="submit">SEND MESSAGE</button></p>
+      </form>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
